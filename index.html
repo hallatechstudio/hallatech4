@@ -313,6 +313,75 @@
 
   .trusted-logo-name:hover { color: rgba(255,255,255,0.7); }
 
+  /* ── PARTNERS ── */
+  .partners-section {
+    padding: 60px 5%;
+    background: var(--white);
+    border-bottom: 1px solid var(--light);
+    display: flex;
+    justify-content: center;
+  }
+
+  .partners-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .partners-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+
+  .partner-logo {
+    height: 54px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .logo-netflix, .logo-meta {
+    height: 74px;
+  }
+
+  .logo-amazon {
+    height: 52px;
+  }
+
+  @media (max-width: 768px) {
+    .partner-logo {
+      height: 40px;
+    }
+    .logo-netflix, .logo-meta {
+       height: 50px;
+     }
+     .logo-amazon {
+       height: 35px;
+     }
+    .partners-logos {
+      gap: 40px;
+    }
+  }
+
+  .partner-logo:hover {
+    transform: scale(1.05);
+  }
+
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to { opacity: 1; transform: translateY(0); }
@@ -1163,6 +1232,18 @@
   </div>
 
 
+</section>
+
+<!-- PARTNERS -->
+<section class="partners-section reveal">
+  <div class="partners-container">
+    <span class="partners-label">Our products have been used by</span>
+    <div class="partners-logos">
+      <img src="Amazon.png" alt="Amazon" class="partner-logo logo-amazon">
+      <img src="meta.png" alt="Meta" class="partner-logo logo-meta">
+      <img src="netflix.png" alt="Netflix" class="partner-logo logo-netflix">
+    </div>
+  </div>
 </section>
 
 <!-- STATS -->
