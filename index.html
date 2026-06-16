@@ -254,9 +254,29 @@
     transform: translateY(-2px);
   }
 
-  .btn-ghost {
-    background: transparent;
-    color: rgba(255,255,255,0.65);
+.btn-ghost {
+     background: transparent;
+     color: rgba(255,255,255,0.65);
+     padding: 16px 28px;
+     border-radius: 100px;
+     font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+     font-size: 14px;
+     font-weight: 600;
+     text-decoration: none;
+     letter-spacing: 0.02em;
+     border: 1px solid rgba(255,255,255,0.15);
+     transition: border-color 0.2s, color 0.2s;
+     display: inline-block;
+}
+
+  .btn-ghost:hover {
+    border-color: rgba(255,255,255,0.45);
+    color: var(--white);
+  }
+
+  .btn-whatsapp {
+    background: var(--teal);
+    color: var(--white);
     padding: 16px 28px;
     border-radius: 100px;
     font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -264,17 +284,16 @@
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.02em;
-    border: 1px solid rgba(255,255,255,0.15);
-    transition: border-color 0.2s, color 0.2s;
+    transition: background 0.2s, transform 0.15s;
     display: inline-block;
   }
 
-  .btn-ghost:hover {
-    border-color: rgba(255,255,255,0.45);
-    color: var(--white);
+  .btn-whatsapp:hover {
+    background: var(--teal-dark);
+    transform: translateY(-2px);
   }
 
-  /* Trusted by */
+   /* Trusted by */
   .trusted-bar {
     position: relative;
     z-index: 2;
@@ -1229,6 +1248,7 @@
     <h1>We build &amp; grow websites and apps for <em>global companies.</em></h1>
     <div class="hero-actions">
       <a href="mailto:support@hallatechnologies.com" class="btn-primary">Start a project</a>
+      <a href="https://wa.me/2348056679806" class="btn-whatsapp">Chat with us</a>
     </div>
   </div>
 
@@ -1338,42 +1358,49 @@
       <div class="service-item reveal">
         <div class="service-item-left">
           <span class="service-num">01</span>
-          <span class="service-name">Product Development</span>
+          <span class="service-name">MVP Development</span>
         </div>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-item reveal reveal-delay-1">
         <div class="service-item-left">
           <span class="service-num">02</span>
-          <span class="service-name">Growth Marketing</span>
+          <span class="service-name">Mobile Apps</span>
         </div>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-item reveal reveal-delay-2">
         <div class="service-item-left">
           <span class="service-num">03</span>
-          <span class="service-name">UI / UX Design</span>
+          <span class="service-name">SaaS Platforms</span>
         </div>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-item reveal reveal-delay-3">
         <div class="service-item-left">
           <span class="service-num">04</span>
-          <span class="service-name">Digital Advertising</span>
+          <span class="service-name">Marketplace Platforms</span>
         </div>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-item reveal">
         <div class="service-item-left">
           <span class="service-num">05</span>
-          <span class="service-name">Data &amp; Analytics</span>
+          <span class="service-name">AI Integrations</span>
         </div>
         <span class="service-arrow">→</span>
       </div>
       <div class="service-item reveal reveal-delay-1">
         <div class="service-item-left">
           <span class="service-num">06</span>
-          <span class="service-name">Security &amp; Compliance</span>
+          <span class="service-name">Growth Campaigns</span>
+        </div>
+        <span class="service-arrow">→</span>
+      </div>
+      <div class="service-item reveal reveal-delay-1">
+        <div class="service-item-left">
+          <span class="service-num">07</span>
+          <span class="service-name">Analytics Setup</span>
         </div>
         <span class="service-arrow">→</span>
       </div>
